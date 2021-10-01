@@ -7,11 +7,11 @@ print("Hello! Hello! Hello!"
 height = int(input("What is your Height in cm: "))
 age = int(input("What is your Age?: "))
 
-if height >= 150 and age > 5:
+if height >= 150 and age >= 5:
     if age > 18:
         bill = 12
         print(f"You can Hop on for the best ride of your life. Adult Tickets are £{bill}, Thank you!🥰")
-    elif age <= 18 and age >= 12:
+    elif 18 >= age >= 12:
         bill = 7
         print(f"You can Hop on for the best ride of your life. Youth tickets are £{bill}, Thank you!🥰")
     else:
@@ -19,7 +19,7 @@ if height >= 150 and age > 5:
         print(f"You can Hop on for the best ride of your life. Your Ticket will cost £{bill}, Thank you!🥰")
     wants_photo = input("Do you want a photo taken? Y or N. ")
     if wants_photo == "Y":
-        bill += 3
+        bill = bill + 3
         print(f"Your final bill is £{bill}")
     else:
         print(f"Oh well, Final ticket price is £{bill}")
